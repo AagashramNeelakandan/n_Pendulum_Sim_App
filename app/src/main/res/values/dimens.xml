@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hint_size">18sp</dimen>
+    <dimen name="TextField_Size">25sp</dimen>
+    <dimen name="horizontal_layout_padding">5sp</dimen>
+    <dimen name="app_title_size">44sp</dimen>
+    <dimen name="app_title_padding">20sp</dimen>
+    <dimen name="app_title_margin_top">10sp</dimen>
+</resources>

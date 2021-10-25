@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">n_Pendulum Sim</string>
+    <string name="number_of_pendulums">Number of Pendulums</string>
+    <string name="length_of_each_pendulum">Length of each pendulum</string>
+    <string name="mass_of_each_pendulum">Mass of each Pendulum</string>
+    <string name="acceleration_due_to_gravity">Acceleration due to gravity</string>
+    <string name="start_angle_of_each_pendulum">Start angle of each Pendulum</string>
+    <string name="initial_velocity_of_each_pendulum">Initial Velocity of each Pendulum</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_2000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_margin="10sp"
+        android:background="@drawable/info_outline_bg">
+
+        <TextView
+            android:id="@+id/controls_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Controls"
+            android:textColor="@color/orangish_white_2000"
+            android:textSize="50sp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic|bold"
+            android:fontFeatureSettings="smcp"></TextView>
+
+        <TextView
+            android:id="@+id/zoomIn_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ :   For zooming into the canvas"
+            android:textColor="#FF2079"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic|bold"
+            android:padding="10sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/zoomOut_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- :   For zooming out of canvas"
+            android:textColor="#E92EFB"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic|bold"
+            android:padding="10sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/reset_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset :   Resets the view"
+            android:textColor="#5CE5D5"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic|bold"
+            android:padding="10sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/stats_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stats :   Shows the FPS, Time &amp; delta Time"
+            android:textColor="#B8FB3C"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic|bold"
+            android:padding="10sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/trace_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trace :   Path traces for pendulum in White &amp; Rainbow"
+            android:textColor="#FFAA01"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic|bold"
+            android:padding="10sp">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

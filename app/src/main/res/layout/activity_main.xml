@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orangish_white_2000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:baselineAligned="false"
+            android:background="@color/orangish_white_2000">
+
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/app_title_padding"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:text="n_Pendulum Sim"
+                android:textAlignment="center"
+                android:textSize="@dimen/app_title_size"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="@dimen/app_title_margin_top"
+                android:textColor="@color/black"/>
+
+            <!--Number of Pendulum-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/horizontal_layout_padding"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/nop_textField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"
+                        android:text="n"
+                        android:textSize="@dimen/TextField_Size"
+                        android:textStyle="italic"
+                        android:textColor="@color/black_2000"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/nop_Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="numberSigned"
+                        android:textSize="@dimen/hint_size"
+                        android:hint="@string/number_of_pendulums"
+                        android:textStyle="italic"
+                        android:textColor="@color/light_black_2000"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--Length-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/horizontal_layout_padding"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/length_TextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"
+                        android:text="Length (m)"
+                        android:textSize="@dimen/TextField_Size"
+                        android:textStyle="italic"
+                        android:textColor="@color/black_2000"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/length_Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/hint_size"
+                        android:hint="@string/length_of_each_pendulum"
+                        android:textStyle="italic"
+                        android:textColor="@color/light_black_2000"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--Mass-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/horizontal_layout_padding"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/mass_TextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"
+                        android:text="Mass (kg)"
+                        android:textSize="@dimen/TextField_Size"
+                        android:textStyle="italic"
+                        android:textColor="@color/black_2000"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/mass_Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/hint_size"
+                        android:hint="@string/mass_of_each_pendulum"
+                        android:textStyle="italic"
+                        android:textColor="@color/light_black_2000"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--Gravity-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/horizontal_layout_padding"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/gravity_TextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"
+                        android:text="Gravity (m/s^2)"
+                        android:textSize="@dimen/TextField_Size"
+                        android:textStyle="italic"
+                        android:textColor="@color/black_2000"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/gravity_Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/hint_size"
+                        android:hint="@string/acceleration_due_to_gravity"
+                        android:textStyle="italic"
+                        android:textColor="@color/light_black_2000"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--Start Angle-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/horizontal_layout_padding"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/angle_TextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"
+                        android:text="Start Angle (deg)"
+                        android:textSize="@dimen/TextField_Size"
+                        android:textStyle="italic"
+                        android:textColor="@color/black_2000"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/angle_Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/hint_size"
+                        android:hint="@string/start_angle_of_each_pendulum"
+                        android:textStyle="italic"
+                        android:textColor="@color/light_black_2000"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--Start Velocity-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/horizontal_layout_padding"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/startVelocity_TextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"
+                        android:text="Initial Velocity  (m/s)"
+                        android:textSize="@dimen/TextField_Size"
+                        android:textStyle="italic"
+                        android:textColor="@color/black_2000"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/startVelocity_Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/hint_size"
+                        android:hint="@string/initial_velocity_of_each_pendulum"
+                        android:textStyle="italic"
+                        android:textColor="@color/light_black_2000"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--Damping Percentage-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/horizontal_layout_padding"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/dampingPercentage_TextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"
+                        android:text="Damping (%)"
+                        android:textSize="@dimen/TextField_Size"
+                        android:textStyle="italic"
+                        android:textColor="@color/black_2000"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/dampingPercentage_Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/hint_size"
+                        android:hint="Damping Percentage"
+                        android:textStyle="italic"
+                        android:textColor="@color/light_black_2000"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--Simulate Button-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/horizontal_layout_padding"
+                android:baselineAligned="false"
+
+                android:layout_marginTop="@dimen/app_title_margin_top">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/runSimulation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Run Simulation"
+                        android:textStyle="italic|bold"
+                        android:background="@color/black_2000"
+                        android:backgroundTint="@color/black_2000"
+                        android:shadowColor="@color/grey_2000"
+                        android:textColor="@color/ivory_white_2000"
+                        android:textSize="@dimen/TextField_Size"
+                        android:padding="@dimen/horizontal_layout_padding"
+                        android:onClick="runSimulationMethod">
+
+                    </Button>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
