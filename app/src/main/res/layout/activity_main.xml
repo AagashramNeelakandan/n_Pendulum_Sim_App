@@ -9,7 +9,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/orangish_white_2000">
+        android:background="@color/orangish_white_2000"
+        android:forceDarkAllowed="false">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -74,7 +75,9 @@
                         android:textSize="@dimen/hint_size"
                         android:hint="@string/number_of_pendulums"
                         android:textStyle="italic"
-                        android:textColor="@color/light_black_2000"/>
+                        android:textColor="@color/light_black_2000"
+                        android:textColorHint="#60000000"
+                        android:backgroundTint="#60000000"/>
 
                 </RelativeLayout>
             </LinearLayout>
@@ -121,7 +124,9 @@
                         android:textSize="@dimen/hint_size"
                         android:hint="@string/length_of_each_pendulum"
                         android:textStyle="italic"
-                        android:textColor="@color/light_black_2000"/>
+                        android:textColor="@color/light_black_2000"
+                        android:textColorHint="#60000000"
+                        android:backgroundTint="#60000000"/>
 
                 </RelativeLayout>
             </LinearLayout>
@@ -168,7 +173,9 @@
                         android:textSize="@dimen/hint_size"
                         android:hint="@string/mass_of_each_pendulum"
                         android:textStyle="italic"
-                        android:textColor="@color/light_black_2000"/>
+                        android:textColor="@color/light_black_2000"
+                        android:textColorHint="#60000000"
+                        android:backgroundTint="#60000000"/>
 
                 </RelativeLayout>
             </LinearLayout>
@@ -215,7 +222,9 @@
                         android:textSize="@dimen/hint_size"
                         android:hint="@string/acceleration_due_to_gravity"
                         android:textStyle="italic"
-                        android:textColor="@color/light_black_2000"/>
+                        android:textColor="@color/light_black_2000"
+                        android:textColorHint="#60000000"
+                        android:backgroundTint="#60000000"/>
 
                 </RelativeLayout>
             </LinearLayout>
@@ -262,7 +271,9 @@
                         android:textSize="@dimen/hint_size"
                         android:hint="@string/start_angle_of_each_pendulum"
                         android:textStyle="italic"
-                        android:textColor="@color/light_black_2000"/>
+                        android:textColor="@color/light_black_2000"
+                        android:textColorHint="#60000000"
+                        android:backgroundTint="#60000000"/>
 
                 </RelativeLayout>
             </LinearLayout>
@@ -309,7 +320,9 @@
                         android:textSize="@dimen/hint_size"
                         android:hint="@string/initial_velocity_of_each_pendulum"
                         android:textStyle="italic"
-                        android:textColor="@color/light_black_2000"/>
+                        android:textColor="@color/light_black_2000"
+                        android:textColorHint="#60000000"
+                        android:backgroundTint="#60000000"/>
 
                 </RelativeLayout>
             </LinearLayout>
@@ -356,7 +369,9 @@
                         android:textSize="@dimen/hint_size"
                         android:hint="Damping Percentage"
                         android:textStyle="italic"
-                        android:textColor="@color/light_black_2000"/>
+                        android:textColor="@color/light_black_2000"
+                        android:textColorHint="#60000000"
+                        android:backgroundTint="#60000000"/>
 
                 </RelativeLayout>
             </LinearLayout>
