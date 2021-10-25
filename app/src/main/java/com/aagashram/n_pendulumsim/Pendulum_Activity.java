@@ -1,4 +1,4 @@
-package com.example.n_pendulumsim;
+package com.aagashram.n_pendulumsim;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;

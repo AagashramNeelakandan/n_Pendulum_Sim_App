@@ -1,4 +1,4 @@
-package com.example.n_pendulumsim;
+package com.aagashram.n_pendulumsim;
 
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;

@@ -1,4 +1,4 @@
-package com.example.n_pendulumsim;
+package com.aagashram.n_pendulumsim;
 
 import android.content.Context;
 

@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.n_pendulumsim"
+        applicationId "com.aagashram.n_pendulumsim"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
