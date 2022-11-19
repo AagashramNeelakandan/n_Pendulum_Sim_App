@@ -18,3 +18,5 @@ Features:
 •	Stats to display current FPS along with the simulation time and current time step used by the Adaptive Runga Kyta method.
 •	Trace toggles between showing traces in white and in rainbow colours. 
 •	Drag to pan across the surface and use + & - buttons for Zooming in and out.
+
+Link: https://play.google.com/store/apps/details?id=com.aagashram.n_pendulumsim
